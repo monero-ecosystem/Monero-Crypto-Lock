@@ -17,7 +17,7 @@ function randomString {
 }
 
 randomString 10;
-#echo "Challenge: $myRandomResult";
+echo "Challenge: $myRandomResult";
 # Get the challenge string, address, and signature from the console. each separated by a space.
 read challenge address signature
 
