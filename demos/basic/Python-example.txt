@@ -1,0 +1,6 @@
+Uploaded two python files to illustrate the basic steps in python.
+
+crypto-lock-sign.py - make Monero jsonrpc calls to get Monero address and sign a challenge string.
+crypto-lock-verify.py - Given a challenge string, Monero address, and signature, verify that the signature of the challenge string was made by the specified Monero address.
+
+
