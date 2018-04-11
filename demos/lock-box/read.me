@@ -1,0 +1,11 @@
+The Monero Crypto-Lock Digital Lock Box is an encrypted file system container accessible through public-key cryptography 
+using the Monero Crypto-Lock protocol. The digital lock box is encrypted using ecryptfs with the passphrase involving a 
+specific Monero public address. The lock box can be locked (encrypted) and unlocked (decrypted) using Monero Crypto-Lock.
+
++ Digital lock-boxes can contain files that represent data as well as executable code.
++ Digital lock-boxes can be compressed (tar.gz) for transport over the network.
+
+The maximum length for an ecryptfs passphrase is 64-characters. So in these simple examples, the first 64-characters of
+a Monero address is used for the passphrase.
+
+Additional documentation will follow shortly.
