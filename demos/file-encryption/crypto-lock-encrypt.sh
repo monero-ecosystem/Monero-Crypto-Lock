@@ -31,8 +31,6 @@ echo "Signature: $signature"
 echo "################################"
 
 
-#curl -i -X POST -H "Content-Type: application/json" -d '{"jsonrpc":"2.0","id":"0","method":"getaddress"}' http://127.0.0.1:18082/json_rpc
-
 buff=`curl -X POST http://127.0.0.1:18082/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"verify","params":{"data":"'"$challenge"'","address":"'"$address"'","signature":"'"$signature"'"}}' -H 'Content-Type: application/json'`
 
 pass="true"
@@ -41,7 +39,6 @@ if echo "$buff" | grep -q "$pass"; then
  gpg --passphrase "$address" -c $target_file ;
  srm $target_file
 else
- #gpg --passphrase "$address" --output /home/user/test.txt /home/user/test.txt.gpg;
 
- echo "lock is now closed!";
+ echo "Monero Crypto-Lock authorization failed!";
 fi
