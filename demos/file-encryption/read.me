@@ -3,6 +3,17 @@ This example illustrates how Monero Crypto-Lock can be used with gpg to encrypt 
 The encryption example script illustrates how to use Monero Crypto-Lock to authenticate:
 - a challenge string is provided with the expectation that it will be digitally signed by a specified Monero address.
 
-Once authenticated a file (passed in as a command-line argument) is encrypted with gpg using the Monero address as the passphrase for encryption.
+A random challenge string is echoed to the screen. The the program waits for input.
+For both crypto-lock-encrypt.sh and crypto-lock-decrypt.sh, the input parameters are:
+<full-path filename of file to be encrypted/decrypted> <challenge> <address> <signature>
+each parameter is seperated from each other by a single space.
+
+crypto-lock-ecnrypt.sh:
+Once authenticated, the file is encrypted with gpg using the Monero address as the passphrase for encryption.
+and the plaintext file is removed with srm (secure-delete)
+
+crypto-lock-decrypt.sh:
+Once authenticated, the file is decrypted. The encrypted .gpg file is left in the directory.
+
 
 
