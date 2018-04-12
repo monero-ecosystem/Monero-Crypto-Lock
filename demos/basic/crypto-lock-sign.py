@@ -10,7 +10,7 @@ if n == 1:
 challenge = sys.argv[1]
 
 # First we will get the Monero address...
-url = "http://localhost:18082/json_rpc"
+url = "http://localhost:18083/json_rpc"
 
 headers = {'content-type': 'application/json'}
 
