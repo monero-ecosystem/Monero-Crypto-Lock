@@ -15,7 +15,7 @@ signature = sys.argv[3]
 
 # Now let's verify that the signature of the challenge was on behalf of
 # the passed Monero address...
-url = "http://localhost:18082/json_rpc"
+url = "http://localhost:18083/json_rpc"
 
 headers = {'content-type': 'application/json'}
 rpc_input2 = {
