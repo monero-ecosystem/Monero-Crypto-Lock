@@ -8,4 +8,8 @@ specific Monero public address. The lock box can be locked (encrypted) and unloc
 The maximum length for an ecryptfs passphrase is 64-characters. So in these simple examples, the first 64-characters of
 a Monero address is used for the passphrase.
 
+Digital lock-boxes, being encrypted file system containers, can be compressed (tar.gz) for transport. For security purposes,
+it is important that a lock-box is locked (encrypted) before being compressed and ready for transport. This ensures that
+the lock-box contents are unreadable during transport.
+
 Additional documentation will follow shortly.
