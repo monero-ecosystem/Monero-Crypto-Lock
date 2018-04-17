@@ -14,14 +14,18 @@ it is important that a lock-box is locked (encrypted) before being compressed an
 the lock-box contents are unreadable during transport.
 
 As stated above, in the first implementation of the demo, the first 64-characters of a specific Monero address is used as
-the ecryptfs passphrase. Any valid Monero address will authenticate through the Monero Crypto-Lock authentication, however,
-the address (first 64-characters) that was used to create the lock-box, is the only address that will pass through the authorization phase to actually unlock the lock-box.
+the ecryptfs passphrase. Any valid Monero address will authenticate through the Monero Crypto-Lock authentication, 
+however, the address (first 64-characters) that was used to create the lock-box, is the only address that will pass
+through the authorization phase to actually unlock the lock-box.
 
-Looking at the code in unlock-lock-box.sh, one can determine that the first 64-characters of a Monero address is used to
-unlock the lock-box. The code does not identify which Monero address is able to unlock the lock-box. However, this identification could be determined via social engineering activity.
+Looking at the code in unlock-lock-box.sh, one can determine that the first 64-characters of a Monero address is 
+used to unlock the lock-box. The code does not identify which Monero address is able to unlock the lock-box. 
+However, this identification could be determined via social engineering activity.
 
-To make this approach even more secure, we provide example code - unlock-lock-box-v2.sh, which accepts a new command line argument named algo. The algo parameter specifies an algorithm that is used to transform the first 64-characters of the 
-Monero address to derive the ecryptfs passphrase. The choices of algorithms are; sha256, md4, md5, ripemd160, sha, sha1, sha224, sha384, and whirlpool.
+To make this approach even more secure, we provide example code - unlock-lock-box-v2.sh, which accepts a new 
+command line argument named algo. The algo parameter specifies an algorithm that is used to transform the first
+64-characters of the  Monero address to derive the ecryptfs passphrase. The choices of algorithms are; sha256, 
+md4, md5, ripemd160, sha, sha1, sha224, sha384, and whirlpool.
 
 The algo parameter is passed into the program at run time so there is no way to identify the exact algorithm used for
 the ecryptfs passphrase.
