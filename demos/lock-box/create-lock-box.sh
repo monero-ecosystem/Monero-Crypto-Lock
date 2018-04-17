@@ -1,5 +1,8 @@
 #!/bin/bash
-
+# Three commandline arguments are required to be passed at run-time:
+# 1. The full path of the lock-box directory
+# 2. The lock-box passphrase string
+# 3. The algorithm to transform the passphrase.
 lock_box=$1; # Full path of lock-box directory to create.
 ph=$2; # Passphrase
 algo=$3; # Algorithm to transform passphrase.
