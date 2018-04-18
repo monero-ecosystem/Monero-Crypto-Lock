@@ -1,5 +1,9 @@
 #!/bin/bash
-
+# 18 April 2018
+# This script uses Monero Crypto-Lock to encrypt a specified file using gpg.
+# The source plaintext file is removed with secure delete.
+#
+#
 # generate a random string for the challenge.
 function randomString {
         # if a param was passed, it's the length of the string we want
@@ -38,8 +42,8 @@ buff=`curl -X POST http://127.0.0.1:18083/json_rpc -d '{"jsonrpc":"2.0","id":"0"
 pass="true"
 if echo "$buff" | grep -q "$pass"; then
 # encrypt the file using the Monero public address as the passphrase.
- gpg --passphrase "$address" -c $target_file ;
- srm $target_file
+ gpg --passphrase "$address" -c $target_file ; # Encrypt the file.
+ srm $target_file # securely remove the source plaintext file.
 else
 
  echo "Authorization has failed!";
