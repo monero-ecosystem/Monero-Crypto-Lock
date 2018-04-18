@@ -22,6 +22,8 @@ Looking at the code in unlock-lock-box.sh, one can determine that the first 64-c
 used to unlock the lock-box. The code does not identify which Monero address is able to unlock the lock-box. 
 However, this identification could be determined via social engineering activity.
 
+WHAT FOLLOWS IS EXPERIMENTAL USING ecryptfs for the *-v2 CODE. 
+
 To make this approach even more secure, we provide example code - unlock-lock-box-v2.sh, which accepts a new 
 command line argument named algo. The algo parameter specifies an algorithm that is used to transform the first
 64-characters of the  Monero address to derive the ecryptfs passphrase. The choices of algorithms are; sha256, 
