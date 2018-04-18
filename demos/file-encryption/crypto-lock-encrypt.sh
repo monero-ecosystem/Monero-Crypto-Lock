@@ -18,7 +18,7 @@ function randomString {
 
 randomString 10;
 echo "Challenge: $myRandomResult";
-# Get the file to encrypt (full path), challenge string, address, and signature from the console. each separated by a space.
+# Get (from stdin) the file to encrypt (full path), challenge string, address, and signature from the console. each separated by a space.
 read target_file challenge address signature
 
 
@@ -31,6 +31,8 @@ echo "Signature: $signature"
 echo "################################"
 
 
+#curl -i -X POST -H "Content-Type: application/json" -d '{"jsonrpc":"2.0","id":"0","method":"getaddress"}' http://127.0.0.1:18082/json_rpc
+
 buff=`curl -X POST http://127.0.0.1:18083/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"verify","params":{"data":"'"$challenge"'","address":"'"$address"'","signature":"'"$signature"'"}}' -H 'Content-Type: application/json'`
 
 pass="true"
@@ -40,5 +42,7 @@ if echo "$buff" | grep -q "$pass"; then
  srm $target_file
 else
 
- echo "Monero Crypto-Lock authorization failed!";
+ echo "Authorization has failed!";
 fi
+
+
