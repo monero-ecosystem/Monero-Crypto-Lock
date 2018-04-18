@@ -1,5 +1,7 @@
 #!/bin/bash
 # Version 2 includes passphrase algorithmic transformation.
+# THIS IS EXPERIMENTAL AND MAY OR MAY NOT BE USED!
+# USE AT YOUR OWN RISK!
 
 function randomString {
         # if a param was passed, it's the length of the string we want
