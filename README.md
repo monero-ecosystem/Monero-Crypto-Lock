@@ -21,4 +21,5 @@ At this point, if everything runs properly, you should be able to start issuing 
 
 # Browser extension for secure anonymous authentication
 Video: https://gateway.ipfs.io/ipfs/QmP8HQMrw83LC8NvALpCU4gkwxZ45gpzCAB2GEd6JRTVJB
+
 The source code and documentation for the browser extension will be placed in this repository soon.
