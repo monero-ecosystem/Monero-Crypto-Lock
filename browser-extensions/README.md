@@ -17,3 +17,12 @@ Monero community adoption of Kovri, we want to begin using i2p out-of-the-gate. 
 Chrome browser for secure authentication over the Internet using a Monero wallet without having to use usernames 
 and passwords. While this is not a pattern for securing anonymity, it does provide an approach to secure authentication
 without users having to remember usernames and passwords.
+
+# Dependencies
+You will need to have monero-wallet-rpc running and available via one of your local ports.
+The monero-wallet-rpc will need to be able to connect to a running instance of monerod.
+
+If your only using monerod and monero-wallet-rpc for authentication purposes, it is recommended that you start
+monerod with the --offline parameter. Then you will not need to deal with managing an updated blockchain. It is
+also recommended that you use a new (empty) wallet for authentication usage. Create a new wallet and do not place
+any XMR in that wallet.
