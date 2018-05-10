@@ -24,5 +24,6 @@ Video: https://gateway.ipfs.io/ipfs/QmP8HQMrw83LC8NvALpCU4gkwxZ45gpzCAB2GEd6JRTV
 
 also available at: https://d.tube/#!/v/douglasbebber/8xw6fk2e
 
-The source code for the Firefox browser extension (alpha version) is now in the browser-extensions directory under Firefox.
+The source code for the Firefox and Chromium/Chrome browser extensions (alpha version) are now in the browser-extensions directory.
+
 Documentation and how-to videos for users and developers will be available soon.
