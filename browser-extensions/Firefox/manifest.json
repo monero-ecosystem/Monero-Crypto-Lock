@@ -1,6 +1,6 @@
 {
   "name": "Monero Authentication",
-  "version": "0.1",
+  "version": "0.2",
   "author": "Copyright (C) 2018, Darcey Dale Bebber, Douglas Alan Bebber", 
   "description": "Monero authentication extension.",
   "permissions": ["activeTab", "clipboardWrite", "storage", "http://localhost/*"],
