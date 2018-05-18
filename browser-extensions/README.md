@@ -26,3 +26,10 @@ If your only using monerod and monero-wallet-rpc for authentication purposes, it
 monerod with the --offline parameter. Then you will not need to deal with managing an updated blockchain. It is
 also recommended that you use a new (empty) wallet for authentication usage. Create a new wallet and do not place
 any XMR in that wallet.
+
+# Test Applications
+
+For secure, anonymous authentication we provide an i2p test web app at: http://lrqks3cdoh5d6arrkng4njdbykveytbdzu4dl2tqizs7mnlwz7ka.b32.i2p/
+
+For clearnet authentication using a Monero wallet rather than usernames and passwords, we provide a test web app at:
+http://23.92.31.84:3021/
