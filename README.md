@@ -26,4 +26,6 @@ also available at: https://d.tube/#!/v/douglasbebber/8xw6fk2e
 
 The source code for the Firefox and Chromium/Chrome browser extensions (alpha version) are now in the browser-extensions directory.
 
-Documentation and how-to videos for users and developers will be available soon.
+How-to install and run dependencies for the Monero Authentication browser extension:
+
+https://gateway.ipfs.io/ipfs/QmVQbGzg9fBwCj491J3ZLYAE1K2m7NAhLycRZu1kXaG38x
