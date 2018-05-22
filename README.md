@@ -29,3 +29,5 @@ The source code for the Firefox and Chromium/Chrome browser extensions (alpha ve
 How-to install and run dependencies for the Monero Authentication browser extension:
 
 https://gateway.ipfs.io/ipfs/QmVQbGzg9fBwCj491J3ZLYAE1K2m7NAhLycRZu1kXaG38x
+
+on DTube:https://d.tube/#!/v/douglasbebber/y1bz26bd
