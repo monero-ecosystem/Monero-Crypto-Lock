@@ -29,16 +29,20 @@ However, this identification could be determined via social engineering activity
 
 Interplanetary File System (IPFS):
 
-A locked lock-box (directory, subdirectories, and files) can be archived (tar -cvzf lock-box-archive-file-name.tar.gz /path/to/lock-box/). The contents of the resulting archive are securely encrypted (as long as the lock-box was locked before creating the archive file).
+A locked lock-box (directory, subdirectories, and files) can be archived 
+(tar -cvzf lock-box-archive-file-name.tar.gz /path/to/lock-box/). The contents of the resulting 
+archive are securely encrypted (as long as the lock-box was locked before creating the archive file).
 
-The resulting archive file can be stored in IPFS and later retrieved for use. The contents of the archived lock-box will remain secure as long as the Monero wallet keys have remained secure.
+The resulting archive file can be stored in IPFS and later retrieved for use. The contents of the archived
+lock-box will remain secure as long as the Monero wallet keys have remained secure.
 
 To illustrate this, a sample lock-box has been stored in IPFS and is accessible at:
 
 https://gateway.ipfs.io/ipfs/Qmbag3VFWsrFTUVWqb3Az4j87pK3g2PHrRS7kRPJgfxvAf
 
 If you enter that URL into your browser, an archive file: Qmbag3VFWsrFTUVWqb3Az4j87pK3g2PHrRS7kRPJgfxvAf.gz
-will be downloaded. Anyone can download the file and extract it, however, the content is securely encrypted and therefore unreadable. To render the content useable, the lock-box must be unlocked.
+will be downloaded. Anyone can download the file and extract it, however, the content is securely encrypted
+and therefore unreadable. To render the content useable, the lock-box must be unlocked.
 
 
 WHAT FOLLOWS IS EXPERIMENTAL USING ecryptfs for the *-v2 CODE. 
