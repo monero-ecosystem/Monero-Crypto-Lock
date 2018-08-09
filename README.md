@@ -36,3 +36,5 @@ on DTube at: https://d.tube/#!/v/douglasbebber/y1bz26bd
 A simple browser extension test app (on the clearnet) can be found at:http://23.92.31.84:3021/ 
 
 There is a similar test app on the I2P network at: http://lrqks3cdoh5d6arrkng4njdbykveytbdzu4dl2tqizs7mnlwz7ka.b32.i2p/
+
+You must be on the I2P network to use the I2P test app.
