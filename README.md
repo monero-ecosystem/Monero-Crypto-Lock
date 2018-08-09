@@ -31,3 +31,5 @@ How-to install and run dependencies for the Monero Authentication browser extens
 https://gateway.ipfs.io/ipfs/QmVQbGzg9fBwCj491J3ZLYAE1K2m7NAhLycRZu1kXaG38x
 
 on DTube at: https://d.tube/#!/v/douglasbebber/y1bz26bd
+
+A simple browser extension test app (on the clearnet) can be found at:http://23.92.31.84:3021/ 
