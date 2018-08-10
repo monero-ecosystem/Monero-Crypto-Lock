@@ -37,4 +37,6 @@ A simple browser extension test app (on the clearnet) can be found at:http://23.
 
 There is a similar test app on the I2P network at: http://lrqks3cdoh5d6arrkng4njdbykveytbdzu4dl2tqizs7mnlwz7ka.b32.i2p/
 
+You can use our browser extension with these test apps.
+
 You must be on the I2P network to use the I2P test app.
