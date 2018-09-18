@@ -14,3 +14,5 @@ The first approach described here involves using Monero Crypto Lock using ecrypt
 -uncompress it
 -unarchive it
 -then unlock the directory with Monero Crypto Lock
+
+The content in this directory will describe some use cases for securely storing sensitive data in remote locations using Monero Crypto Lock.
