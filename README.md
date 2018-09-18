@@ -8,7 +8,7 @@ https://steemit.com/monero/@douglasbebber/monero-crypto-lock
 # Dependencies
 To use Monero Crypto-Lock you will need to download a current distribution of the Monero software.
 The initial Monero Crypto-Lock project used the monero-v0.11.1.0 release. We just changed over to
-monero-v0.12.0.0
+monero-v0.12.3.0
 
 1. Install the Monero software on your system.
 2. Run the monerod daemon. You can run it with the --offline parameter to prevent having to sync with the blockchain.
