@@ -15,7 +15,7 @@ monero-v0.12.3.0
 3. Run the monero-wallet-rpc program. 
    Typical launch:
    
-   ./monero-wallet-rpc --rpc-bind-port 18083 --disable-rpc-login --wallet-file /home/user/monero-v0.12.0.0/test --prompt
+   ./monero-wallet-rpc --rpc-bind-port 18083 --disable-rpc-login --wallet-file /home/user/monero-v0.12.3.0/test --prompt
    
 At this point, if everything runs properly, you should be able to start issuing jsonrpc commands.
 
