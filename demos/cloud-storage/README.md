@@ -7,3 +7,4 @@ The first approach described here involves using Monero Crypto Lock using ecrypt
 
 2. Archive the entire encrypted directory structure and compress it using a format similar to tar.gz. The entire encrypted directory structure will then be packaged as a single compressed file that can be stored in the cloud.
 
+3. The compressed archive file can now be stored in the cloud (i.e., stored on a VPS file system, stored in a distributed file system such as IPFS, etc.). For example, if you store the file on a VPS using a utility such as scp, the data residing inside the encrypted directory structure, packaged in the compressed archive file will be safe from administrators working on behalf of the organization providing the VPS service as well as from any other user that has access to the VPS the encrypted file is stored on. 
