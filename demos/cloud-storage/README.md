@@ -11,12 +11,12 @@ The first approach described here involves using Monero Crypto Lock using ecrypt
 
 4. When you wish to access the data within the encrypted, compressed, archive file, you will need to:
 
--download the file to your computer
+  -download the file to your computer
 
--uncompress it
+  -uncompress it
 
--unarchive it
+  -unarchive it
 
--then unlock the directory with Monero Crypto Lock
+  -then unlock the directory with Monero Crypto Lock
 
 The content in this directory will describe some use cases for securely storing sensitive data in remote locations using Monero Crypto Lock.
