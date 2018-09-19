@@ -42,7 +42,7 @@ buff=`curl -X POST http://127.0.0.1:18083/json_rpc -d '{"jsonrpc":"2.0","id":"0"
 
 pass="true"
 if echo "$buff" | grep -q "$pass"; then
-# sign the address and use the private spend key as the gpg passphrase.
+# Use the private spend key as the gpg passphrase.
 sbuff=`curl -X POST http://127.0.0.1:18083/json_rpc -d '{"jsonrpc":".0","id":"0","method":"query_key","params":{"key_type":"spend_key"}}' -H 'Content-Type: application/json'`
 # parse the returned json.
 var="key"
