@@ -1,5 +1,5 @@
 #!/bin/bash
-# 18 April 2018.
+# 19 Spetember 2018.
 # This script decrypts a file that has been encrypted with
 # crypto-lock-encrypt.sh 
 #
@@ -23,8 +23,7 @@ function randomString {
 
 randomString 10;
 echo "Challenge: $myRandomResult";
-# Get the file to encrypt (full path), challenge string, address, and signature 
-from the console. each separated by a space.
+# Get the file to encrypt (full path), challenge string, address, and signature from the console. each separated by a space.
 read target_file challenge address signature
 
 echo "################################"
@@ -37,15 +36,23 @@ echo "################################"
 
 
 
-buff=`curl -X POST http://127.0.0.1:18083/json_rpc -d '{"jsonrpc":"2.0","id":"0"
-,"method":"verify","params":{"data":"'"$challenge"'","address":"'"$address"'","s
-ignature":"'"$signature"'"}}' -H 'Content-Type: application/json'`
+buff=`curl -X POST http://127.0.0.1:18083/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"verify","params":{"data":"'"$challenge"'","address":"'"$address"'","signature":"'"$signature"'"}}' -H 'Content-Type: application/json'`
 
 pass="true"
 if echo "$buff" | grep -q "$pass"; then
- gpg --passphrase "$address" --output /home/user/test.txt  $target_file ;
+# use the private spend key as the gpg passphrase.
+sbuff=`curl -X POST http://127.0.0.1:18083/json_rpc -d '{"jsonrpc":".0","id":"0","method":"query_key","params":{"key_type":"spend_key"}}' -H 'Content-Type: application/json'`
+# parse the json.
+var="key"
+rt=$(echo "$sbuff" | grep "$var")
+var=${rt: -66}
+sk=${var:0:64}
+
+of=${target_file::-4}
+ gpg --passphrase "$sk" --output $of  $target_file ;
  srm /home/user/test.txt.gpg # remove the encrypted source file.
 else
 
- echo "request is NOT authorized!";
+ echo "lock is now closed!";
 fi
+
