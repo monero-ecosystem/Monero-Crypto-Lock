@@ -5,7 +5,7 @@
 # USE AT YOUR OWN RISK!
 
 # This script uses Monero Crypto-Lock to encrypt/decrypy a specified file using gpg.
-# The source plaintext file is removed with secure delete.
+# The source plaintext file is removed after encryption with secure delete.
 # The encrypted source file is removed after decryption with secure delete.
 # 
 # This version uses the private spend key of the Monero wallet
