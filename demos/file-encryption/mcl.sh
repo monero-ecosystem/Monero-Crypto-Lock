@@ -33,15 +33,12 @@ else
 		# use the private spend key as the gpg passphrase.
 		echo "decrypting..."
 		target_file=$1
-		#echo "$target_file"
 		sbuff=`curl -X POST http://127.0.0.1:18083/json_rpc -d '{"jsonrpc":".0","id":"0","method":"query_key","params":{"key_type":"spend_key"}}' -H 'Content-Type: application/json'`
 		# parse the json.
 		var="key"
 		rt=$(echo "$sbuff" | grep "$var")
 		var=${rt: -66}
 		sk=${var:0:64}
-		#echo "passphrase:"
-		#echo $sk
 		of=${target_file::-4}
  		gpg --passphrase "$sk" --output $of  $target_file ;
  		srm $target_file # remove the encrypted source file.
@@ -49,7 +46,6 @@ else
 		#Encrypt
 		echo "encrypting..."
 		target_file=$2
-		#echo "$target_file"
 		if [ "$1" != "-c" ]
 		then
 			echo "invalid command line argument $1 exiting!"		
@@ -62,8 +58,6 @@ else
 		rt=$(echo "$sbuff" | grep "$var")
 		var=${rt: -66}
 		sk=${var:0:64}
-		#echo "passphrase:"
-		#echo $sk
 		# encrypt the file using the private spend key as the passphrase.
 		 gpg --passphrase "$sk" -c $target_file ; # Encrypt the file.
 		 srm $target_file # securely remove the source plaintext file.
