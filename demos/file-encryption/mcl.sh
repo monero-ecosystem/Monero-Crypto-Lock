@@ -19,7 +19,6 @@
 # example: ./mcl.sh /home/user/test.txt.gpg
 #
 
-#echo "The number of arguments is: $#"
 
 if [ "$#" -ge 3 ]
 then
