@@ -14,3 +14,5 @@ The official source of information (provided by the anonymous author of this pap
 
 http://ytdefrycoe6fgwqqyo6o76bndcc6ejnnb65an4tifkkxv3zvuwna.b32.i2p/index.html
 
+(You must be on the I2P network to resolve the above link!)
+
