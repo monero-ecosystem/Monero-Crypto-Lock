@@ -10,3 +10,7 @@ Added instructions for using an encrypted leaseset for the I2P monerod hidden se
 
 Added instructions for automating services using systemd
 
+The official source of information (provided by the anonymous author of this paper) can be found at:
+
+http://ytdefrycoe6fgwqqyo6o76bndcc6ejnnb65an4tifkkxv3zvuwna.b32.i2p/index.html
+
