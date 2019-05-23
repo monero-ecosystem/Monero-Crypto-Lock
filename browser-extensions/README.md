@@ -27,6 +27,8 @@ monerod with the --offline parameter. Then you will not need to deal with managi
 also recommended that you use a new (empty) wallet for authentication usage. Create a new wallet and do not place
 any XMR in that wallet.
 
+Download the latest Monero software from https://web.getmonero.org/downloads/
+
 # Test Applications
 
 For secure, anonymous authentication we provide an i2p test web app at: http://lrqks3cdoh5d6arrkng4njdbykveytbdzu4dl2tqizs7mnlwz7ka.b32.i2p/
