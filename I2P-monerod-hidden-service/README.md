@@ -15,4 +15,16 @@ The official source of information (provided by the anonymous author of this pap
 http://ytdefrycoe6fgwqqyo6o76bndcc6ejnnb65an4tifkkxv3zvuwna.b32.i2p/index.html
 
 (You must be on the I2P network to resolve the above link!)
+=====================================================================================================================
 
+June 2019 - The author of the paper has made a test I2P monerod Hidden Service available for evaluation.
+DO NOT TRY TO SEND ANY MONERO THROUGH THIS TEST SERVICE AS THE monerod IS RUNNING IN OFFLINE MODE!
+(./monerod --offline)
+The test serice is just for evaluation, connecting wallets to a running I2P monerod Hidden Service to see how it works.
+Once you have a client I2P tunnel connecting to the test I2P monerod Hidden Service you can issue monerod daemon commands:
+
+https://web.getmonero.org/resources/developer-guides/daemon-rpc.html
+
+The test I2P Monerod Hidden Service destination is provided at: http://ytdefrycoe6fgwqqyo6o76bndcc6ejnnb65an4tifkkxv3zvuwna.b32.i2p/index.html
+
+at the time of this post the Destination is: ylvyjddi5juw54qbkx7zelkujnhsvkukev6ncl6ec3gzhymwld2a.b32.i2p
