@@ -21,6 +21,7 @@ At this point, if everything runs properly, you should be able to start issuing 
 
 # Browser extension for secure anonymous authentication
 Video: https://gateway.ipfs.io/ipfs/QmP8HQMrw83LC8NvALpCU4gkwxZ45gpzCAB2GEd6JRTVJB
+
 (Video file is located in the browser extensions directory: https://github.com/monero-ecosystem/Monero-Crypto-Lock/blob/master/browser-extensions/MoneroAuth.mp4)
 
 
