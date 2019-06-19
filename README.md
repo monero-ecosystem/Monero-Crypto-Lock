@@ -22,7 +22,6 @@ At this point, if everything runs properly, you should be able to start issuing 
 # Browser extension for secure anonymous authentication
 Video: https://gateway.ipfs.io/ipfs/QmP8HQMrw83LC8NvALpCU4gkwxZ45gpzCAB2GEd6JRTVJB
 
-also available at: https://d.tube/#!/v/douglasbebber/8xw6fk2e
 
 The source code for the Firefox and Chromium/Chrome browser extensions (alpha version) are now in the browser-extensions directory.
 
@@ -30,7 +29,6 @@ How-to install and run dependencies for the Monero Authentication browser extens
 
 https://gateway.ipfs.io/ipfs/QmVQbGzg9fBwCj491J3ZLYAE1K2m7NAhLycRZu1kXaG38x
 
-on DTube at: https://d.tube/#!/v/douglasbebber/y1bz26bd
 
 # Demo Web Applications
 A simple browser extension test app (on the clearnet) can be found at:http://23.92.31.84:3021/ 
