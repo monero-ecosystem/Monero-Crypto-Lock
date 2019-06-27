@@ -12,7 +12,7 @@ Added instructions for automating services using systemd
 
 The official source of information (provided by the anonymous author of this paper) can be found at:
 
-http://ytdefrycoe6fgwqqyo6o76bndcc6ejnnb65an4tifkkxv3zvuwna.b32.i2p/index.html
+http://monerod.i2p
 
 (You must be on the I2P network to resolve the above link!)
 =====================================================================================================================
@@ -25,6 +25,6 @@ Once you have a client I2P tunnel connecting to the test I2P monerod Hidden Serv
 
 https://web.getmonero.org/resources/developer-guides/daemon-rpc.html
 
-The test I2P Monerod Hidden Service destination is provided at: http://ytdefrycoe6fgwqqyo6o76bndcc6ejnnb65an4tifkkxv3zvuwna.b32.i2p/index.html
+The test I2P Monerod Hidden Service destination is provided at: http://monerod.i2p
 
 at the time of this post the Destination is: ylvyjddi5juw54qbkx7zelkujnhsvkukev6ncl6ec3gzhymwld2a.b32.i2p
